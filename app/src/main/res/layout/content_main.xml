@@ -11,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/fondoapp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.iesnervion.cprieto.memorycardgame.MainActivity"
     tools:showIn="@layout/app_bar_main">
@@ -21,13 +22,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txvTitulo"
+        android:textColor="#F61B3E"
+        tools:fontFamily="casual"
         android:layout_marginBottom="20dp"
-        android:textSize="30dp"/>
+        android:textSize="40dp"/>
 
     <Button
         android:text="@string/menu_opcionesplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#2C186C"
         android:id="@+id/btnPlay"
         android:background="@drawable/btn_redondo"/>
 

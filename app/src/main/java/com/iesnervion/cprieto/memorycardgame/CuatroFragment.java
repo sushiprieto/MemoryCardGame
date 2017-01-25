@@ -141,13 +141,24 @@ public class CuatroFragment extends Fragment {
                             //Le mando un mensajito pa que se entere que ha ganao
                             if(ganar == 8){
 
-                                Toast.makeText(getActivity(), "HAS GANAO CABRON", Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(getActivity(), "HAS GANAO CABRON", Toast.LENGTH_SHORT).show();
 
                                 //Paramos el cronometro y lo metemos en una variable para mostrar el tiempo que ha tardado
                                 cronometrito.stop();
-                                long saveTime = SystemClock.elapsedRealtime() - cronometrito.getBase();
-                                int seconds = (int)(saveTime/1000 % 60);
-                                txvCronometro.setText("Has tardado: " + seconds);
+                                long tiempo = SystemClock.elapsedRealtime() - cronometrito.getBase();
+
+                                //int hours = (int) (tiempo / 3600000);
+                                //int minutes = (int) (tiempo - hours * 3600000) / 60000;
+                                //int seconds = (int) (tiempo - hours * 3600000 - minutes * 60000) / 1000;
+
+                                long segundos = 0;
+
+                                if (tiempo >= 1000) {
+                                    segundos = tiempo / 1000;
+                                }
+
+                                //int seconds = (int)(saveTime/1000 % 60);
+                                txvCronometro.setText("Has tardado: " + segundos + " segundos");
 
                             }
 
@@ -177,11 +188,6 @@ public class CuatroFragment extends Fragment {
 
 
                         }
-
-
-
-
-
 
                     }
                 });

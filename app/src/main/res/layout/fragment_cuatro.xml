@@ -27,8 +27,8 @@
 
     <Chronometer
         android:id="@+id/chrCronometro4x4"
-        android:textColor="#4169E1"
-        android:textSize="20dp"
+        android:textColor="#2C186C"
+        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -38,6 +38,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#2C186C"
+        android:textSize="30dp"
         android:id="@+id/txvCronometro4x4"/>
 
 </LinearLayout>

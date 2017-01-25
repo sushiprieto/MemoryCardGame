@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fondoapp"
     tools:context="com.iesnervion.cprieto.memorycardgame.GameActivity">
 
     <LinearLayout
@@ -20,13 +21,18 @@
             android:text="@string/menu_opciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn4x4" />
+            android:id="@+id/btn4x4"
+            android:background="#A294D1"
+            android:textColor="#2C186C"
+            android:layout_marginRight="50dp"/>
 
         <Button
             android:text="@string/menu_opciones2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn6x6" />
+            android:id="@+id/btn6x6"
+            android:background="#A294D1"
+            android:textColor="#2C186C"/>
 
     </LinearLayout>
 

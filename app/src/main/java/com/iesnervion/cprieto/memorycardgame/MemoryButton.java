@@ -38,6 +38,8 @@ public class MemoryButton extends Button {
 
         tempParams.width = (int)getResources().getDisplayMetrics().density * 50;
         tempParams.height = (int)getResources().getDisplayMetrics().density * 50;
+        tempParams.bottomMargin = (int)getResources().getDisplayMetrics().density * 10;
+        tempParams.rightMargin = (int)getResources().getDisplayMetrics().density * 10;
 
         setLayoutParams(tempParams);
 
